@@ -1,8 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char c);
+#include <stdio.h>
+#include <math.h>
 
-void print_triangle(int size);
+int _putchar(char c);
+long largest_prime_factor(long n);
 
 #endif /* MAIN_H */
