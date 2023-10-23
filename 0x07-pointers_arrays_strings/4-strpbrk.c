@@ -1,27 +1,30 @@
+
+
+
+
+
+
+
 #include "4-main.h"
-
 /**
- * print_rev - prints string in reverse followed by a new line
- * @s: string
- * return: 0
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
-
-void print_rev(char *s)
+char *_strpbrk(char *s, char *accept)
 {
-	int longi = 0;
-	int o;
+		int k;
 
-	while (*s != '\0')
-	{
-		longi++;
+		while (*s)
+		{
+			for (k = 0; accept[k]; k++)
+			{
+			if (*s == accept[k])
+			return (s);
+			}
 		s++;
-	}
-	s--;
-	for (o = longi; o > 0; o--)
-	{
-		_putchar(*s);
-		s--;
-	}
+		}
 
-	_putchar('\n');
+	return ('\0');
 }
