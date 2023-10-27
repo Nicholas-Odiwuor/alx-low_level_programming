@@ -1,3 +1,4 @@
+#!/bin/bash
 #include "0-main.h"
 
 /**
