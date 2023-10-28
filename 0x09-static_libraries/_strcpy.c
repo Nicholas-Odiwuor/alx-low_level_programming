@@ -1,5 +1,5 @@
 #!/bin/bash
-#include "0-main.h"
+#include "main.h"
 /**
  * _strncpy - copy a string
  * @dest: input value

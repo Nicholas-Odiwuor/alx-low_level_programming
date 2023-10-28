@@ -1,5 +1,5 @@
 #!/bin/bash
-#include "0-main.h"
+#include "main.h"
 
 /**
  * _isupper - uppercase letters

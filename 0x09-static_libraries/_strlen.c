@@ -1,5 +1,5 @@
 #!/bin/bash
-#include "0-main.h"
+#include "main.h"
 /**
  * _strlen - returns the length of a string
  * @s: string
