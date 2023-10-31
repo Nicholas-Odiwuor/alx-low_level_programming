@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * simple_print_buffer - Prints a buffer in hexadecimal.
+ * @buffer: The address of memory to print.
+ * @size: The size of the memory to print.
  *
  * Return: Nothing.
  */
@@ -31,7 +31,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 }
 
 /**
- * main - check the code for ALX School students.
+ * main - Entry point for the program.
  *
  * Return: Always 0.
  */
@@ -40,9 +40,9 @@ int main(void)
     char *buffer;
 
     buffer = create_array(98, 'H');
-    if  (buffer == NULL)
+    if (buffer == NULL)
     {
-        printf("failed to allocate memory\n");
+        printf("Failed to allocate memory\n");
         return (1);
     }
     simple_print_buffer(buffer, 98);
