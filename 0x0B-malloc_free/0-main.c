@@ -4,9 +4,6 @@
 
 /**
  * simple_print_buffer - Prints a buffer in hexadecimal.
- * @buffer: The address of memory to print.
- * @size: The size of the memory to print.
- *
  * Return: Nothing.
  */
 void simple_print_buffer(char *buffer, unsigned int size)
@@ -30,11 +27,6 @@ void simple_print_buffer(char *buffer, unsigned int size)
     printf("\n");
 }
 
-/**
- * main - Entry point for the program.
- *
- * Return: Always 0.
- */
 int main(void)
 {
     char *buffer;
