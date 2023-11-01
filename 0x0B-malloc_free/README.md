@@ -1,33 +1,15 @@
-# Malloc
-
-Brief project description.
+# 0x0B. C - malloc, free
 
 ## Description
-
-A C program that creates an array of characters and initializes it with a specific character.
+This project contains a C function that creates an array of characters and initializes it with a specific character.
 
 ## Requirements
-
-- Code follows Betty style.
-- Compiles on Ubuntu 20.04 with `gcc`.
+- Compiled on Ubuntu 20.04 LTS using `gcc` with options: -Wall -Werror -Wextra -pedantic -std=gnu89.
 - No global variables.
-- Use only `malloc` and `free`.
-- `main.h` contains function prototypes.
+- Uses only `malloc` and `free`.
+- The function prototype is defined in `main.h`.
 
-## File Descriptions
-
-- `0-create_array.c`: Implements `create_array` function.
-- `main.h`: Header with function prototypes.
-
-## Usage
-
+## Function Prototype
 ```c
-#include "main.h"
-
-int main(void) {
-    char *array = create_array(10, 'H');
-    /* Use the array. */
-    free(array);
-    return (0);
-}
+char *create_array(unsigned int size, char c);
 
