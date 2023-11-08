@@ -1,18 +1,27 @@
-# Function Pointers in C
+# Array Iterator Function
 
-Function pointers are a powerful and versatile features in the C programming language. 
-They allow you to store and call functions dynamically at runtime, making them a valuable tool for various programming tasks.
+This project includes a C function called `array_iterator` that allows you to execute a specified function on each element of an array. It follows the requirements provided.
 
-## About Function Pointers
+## Function Description
 
-A function pointer is a variable that can hold the address of a function. 
-Just like data pointers point to data, function pointers point to executable code. 
-This enables dynamic function invocation and is commonly used for implementing callbacks, dynamic function selection, and more.
+The `array_iterator` function takes three parameters:
 
-## Declaring Function Pointers
+- `array`: A pointer to the integer array to be iterated.
+- `size`: The size of the array.
+- `action`: A function pointer to the function that you want to execute on each element of the array.
 
-In C, you declare a function pointer using the following syntax:
+## Requirements
 
-```c
-return_type (*pointer_name)(parameter_type1, parameter_type2, ...);
+- The code follows the provided requirements, including using the given compilation options and adhering to the Betty coding style.
+- The only standard library functions used are `malloc`, `free`, and `exit`. Other standard library functions like `printf`, `puts`, `calloc`, and `realloc` are forbidden.
+- A header file named `function_pointers.h` is included, containing the function prototype for `array_iterator`.
+- The code does not use global variables.
+- No more than 5 functions per file.
+
+## Compilation
+
+To compile the project using GCC on Ubuntu 20.04 LTS, use the following command:
+
+```bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o your_program your_program.c
 
