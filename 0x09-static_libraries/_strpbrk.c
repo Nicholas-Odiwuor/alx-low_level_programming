@@ -1,24 +1,23 @@
-#!/bin/bash
 #include "main.h"
+
 /**
- * _strpbrk - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
+ * _strpbrk - Searches a string for any of a set of bytes.
+ * @s: The string to search
+ * @accept: The set of characters to match
+ *
+ * Return: A pointer to the first occurrence in s
+ *         of any of the characters in accept,
+ *         or NULL if no such character is found.
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int k;
+    while (*s)
+    {
+        if (_strchr(accept, *s))
+            return s;
+        s++;
+    }
 
-	while (*s)
-	{
-		for (k = 0; accept[k]; k++)
-		{
-		if (*s == accept[k])
-		return (s);
-		}
-	s++;
-	}
-
-return ('\0');
+    return NULL;
 }
+
