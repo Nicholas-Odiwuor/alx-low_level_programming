@@ -20,4 +20,3 @@ int rand()
 		return 74;
 	return ct * ct % 30000;
 }
-

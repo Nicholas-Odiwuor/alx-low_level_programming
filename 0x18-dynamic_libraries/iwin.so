@@ -1,0 +1,18 @@
+#define _GNU_SOURCE
+#include <dlfcn.h>
+#include <stdio.h>
+
+int rand() {
+    static int (*real_rand)(void) = NULL;
+    if (!real_rand)
+        real_rand = dlsym(RTLD_NEXT, "rand");
+    return 9; // Replace with your desired number
+}
+
+int rand_r(unsigned int *seedp) {
+    static int (*real_rand_r)(unsigned int *) = NULL;
+    if (!real_rand_r)
+        real_rand_r = dlsym(RTLD_NEXT, "rand_r");
+    return 9; // Replace with your desired number
+}
+
