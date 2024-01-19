@@ -1,4 +1,4 @@
 #!/bin/bash
-wget -P /tmp https://github.com/Nicholas-Odiwuor/alx-low_level_programming/raw/main/0x18-dynamic_libraries/iwin.so
-export LD_PRELOAD=/tmp/iwin.so
+gcc -shared -fPIC -o /tmp/libhack.so -nostartfiles -ldl 101-make_me_win.c
+LD_PRELOAD=/tmp/libhack.so
 
